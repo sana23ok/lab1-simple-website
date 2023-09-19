@@ -5,30 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My website</title>
-
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-
-    <!-- Header container of page -->
-    <header>
-        <div class="right-align">
-            <h1 class="add-title-style">World of CSS</h1>
-        </div>
-    </header>
-
-    <!-- Main container -->
-    <main>
-        <!-- Left side bar -->
-        <aside class="sidebar">
-            <!-- Additional container on the left side bar -->
-            <div class="add-el">
-                <p class="add-title-style">Pages of the web-site</p>
+    <div class="container">
+        <!-- Header of page -->
+        <div class="header">
+            <div class="right-align">
+                <h2 class="add-title-style">World of CSS</h2>
             </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="right-align">
+                <h2 class="add-title-style">Discover<br> CSS colors</h2>
+            </div>
+        </div>
+
+        <!-- Left side bar -->
+        <div class="sidebar-left">
             <!-- Content of the side bar -->
             <div class="sidebar-content">
-
                 <p class="add-title-style">Menu</p>
                 <ol>
                     <li><a href="index.html"> Main page</a></li>
@@ -37,64 +36,62 @@
                     <li><a href="page4.html"> Hexadecimal Colors</a></li>
                 </ol>
             </div>
-        </aside>
-
-        <div class="main-div">
-            <h2 class="main-title-style">Understanding Hexadecimal Colors</h2>
-
-            <div class="main-text-box">
-                <p class="main-text-style">
-                Hexadecimal colors, often referred to simply as "hex colors," 
-                are a representation of colors in web design using a
-                base-16 numbering system. They consist of six characters, 
-                which can include numbers (0-9) and letters (A-F), preceded by
-                a "#" symbol. For example, "#FF5733" represents a specific shade of orange.</p>
-            </div>
-
-            <div class="img-container">
-                <img src="./imgs/HEX-RGB-color-codes.png" alt="Hexadecimal" usemap="#image-map">
-            <!-- MAP -->
-            <map name="image-map">
-                <area shape="rect" coords="0,0,350,350" href="page3.html" alt="Area 1">
-            </map>
-            
-            </div>
-
-            <!-- Additional element of main div -->
-            <div class="add-footer">
-                <p class="add-title-style">In CSS, hexadecimal colors are commonly used to set the color of text</p>
-            </div>
         </div>
 
         <!-- Right sidebar -->
-        <aside class="sidebar">
+        <div class="sidebar-right">
             <div class="sidebar-content">
-                <h3 class="add-title-style">Why Hexadecimal?</h3>
+                <h3 class="add-title-style">Some of the advantages of using CSS are:</h3>
                 <ul>
-                    <li>Wide Color Range: there are over 16 million possible color combinations.
-                    </li>
-
-                    <li>Consistency: hexadecimal values provide consistent color definitions.
-                    </li>
-
-                    <li>Compactness: hexadecimal codes are concise.
-                    </li>
-
-                    <li>Compatibility: that colors are universally supported by all modern web browsers and design software.   
-                    </li>
+                    <li>Easier to maintain and update</li>
+                    <li>Greater consistency in design</li>
+                    <li>More formatting options</li>
+                    <li>Lightweight code</li>
+                    <li>Faster download times</li>
+                    <li>Search engine optimization benefits</li>
+                    <li>Ease of presenting different styles to different viewers</li>
+                    <li>Greater accessibility</li>
                 </ul>
-
             </div>
-        </aside>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="right-align">
-            <h1 class="add-title-style">Discover<br> CSS colors</h1>
         </div>
-    </footer>
+
+        <!-- Additional container on the left side bar -->
+        <div class="add-el">
+            <p class="add-title-style">Pages of the web-site</p>
+        </div>
+
+        <!-- Additional element of main div -->
+        <div class="add-footer">
+            <p class="add-text">
+                In CSS, hexadecimal colors are commonly used to set the color of text
+            </p>
+        </div>
+
+        <!-- Main container -->
+        <div class="main">
+            <h1 class="main-title-style">Understanding Hexadecimal Colors</h1>
+            
+            <div class="main-text-box">
+                <p class="main-text-style">
+                    Hexadecimal colors, often referred to simply as "hex colors,"
+                    are a representation of colors in web design using a
+                    base-16 numbering system. They consist of six characters,
+                    which can include numbers (0-9) and letters (A-F), preceded by
+                    a "#" symbol. For example, "#FF5733" represents a specific shade of orange.</p>
+            </div>
+            
+            <div class="img-container">
+                <img src="./imgs/HEX-RGB-color-codes.png" alt="Hexadecimal" usemap="#image-map">
+                <!-- MAP -->
+                <map name="image-map">
+                    <area shape="rect" coords="0,0,350,350" href="page3.html" alt="Area 1">
+                </map>
+            
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 

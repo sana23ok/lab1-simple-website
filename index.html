@@ -5,30 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My website</title>
-
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-
-    <!-- Header container of page -->
-    <header>
-        <div class="right-align">
-            <h1 class="add-title-style">World of CSS</h1>
-        </div>
-    </header>
-
-    <!-- Main container -->
-    <main>
-        <!-- Left side bar -->
-        <aside class="sidebar">
-            <!-- Additional container on the left side bar -->
-            <div class="add-el">
-                <p class="add-title-style">Pages of the web-site</p>
+    <div class="container">
+        <!-- Header of page -->
+        <div class="header">
+            <div class="right-align">
+                <h2 class="add-title-style">World of CSS</h2>
             </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="right-align">
+                <h2 class="add-title-style">Discover<br> CSS colors</h2>
+            </div>
+        </div>
+
+        <!-- Left side bar -->
+        <div class="sidebar-left">
             <!-- Content of the side bar -->
             <div class="sidebar-content">
-                 
                 <p class="add-title-style">Menu</p>
                 <ol>
                     <li><a href="index.html"> Main page</a></li>
@@ -37,21 +36,50 @@
                     <li><a href="page4.html"> Hexadecimal Colors</a></li>
                 </ol>
             </div>
-        </aside>
+        </div>
 
-        <div class="main-div">
-            <h2 class="main-title-style">Exploring the World of CSS Colors</h2>
+        <!-- Right sidebar -->
+        <div class="sidebar-right">
+            <div class="sidebar-content">
+                <h3 class="add-title-style">Some of the advantages of using CSS are:</h3>
+                <ul>
+                    <li>Easier to maintain and update</li>
+                    <li>Greater consistency in design</li>
+                    <li>More formatting options</li>
+                    <li>Lightweight code</li>
+                    <li>Faster download times</li>
+                    <li>Search engine optimization benefits</li>
+                    <li>Ease of presenting different styles to different viewers</li>
+                    <li>Greater accessibility</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Additional container on the left side bar -->
+        <div class="add-el">
+            <p class="add-title-style">Pages of the web-site</p>
+        </div>
+
+        <!-- Additional element of main div -->
+        <div class="add-footer">
+            <p class="add-title-style">CSS is mainly used for web development or page design</p>
+        </div>
+
+        <!-- Main container -->
+        <div class="main">
+            <h1 class="main-title-style">Exploring the World of CSS Colors</h1>
             
             <div class="main-text-box">
-                <p class="main-text-style">Welcome to our comprehensive guide on CSS and its colour system colors!
-                Colors play a vital role in web design, allowing you to create
-                visually appealing and engaging websites. In this guide, we'll dive
-                 deep into the world of CSS colors, covering
-                everything from the basics to advanced techniques. 
-                Whether you're a beginner or an experienced web developer, there's
-                something here for everyone.</p>
+                <p class="main-text-style">
+                    <span class="add-title-style">Cascading Style Sheets (CSS)</span>
+                    is a style sheet language used for describing the presentation of a document written in a
+                    markup language such as HTML or XML. CSS is a cornerstone
+                    technology of the World Wide Web, alongside HTML and JavaScript.
+                    CSS colors play a vital role in web design, allowing you to create
+                    visually appealing and engaging websites. 
+                </p>
             </div>
-
+            
             <div class="img-container">
                 <img src="imgs/Blueberry_pl.png" alt="CSS Colors Palette" usemap="#image-map">
             
@@ -62,38 +90,9 @@
             
             </div>
 
-            <!-- Additional element of main div -->
-            <div class="add-footer">
-                <p class="add-title-style">CSS is mainly used for web development or page design</p>
-            </div>
         </div>
-
-        <!-- Right sidebar -->
-        <aside class="sidebar">
-            <div class="sidebar-content">
-                <h3 class="add-title-style">Some of the advantages of using CSS are:</h3> 
-                <ul>
-                <li>Easier to maintain and update</li>
-                <li>Greater consistency in design</li>
-                <li>More formatting options</li>
-                <li>Lightweight code</li>
-                <li>Faster download times</li>
-                <li>Search engine optimization benefits</li>
-                <li>Ease of presenting different styles to different viewers</li>
-                <li>Greater accessibility</li>
-                </ul>
-             
-            </div>
-        </aside>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="right-align">
-            <h1 class="add-title-style">Discover<br> CSS colors</h1> 
-        </div>
-    </footer>
+        
+    </div>
 
 </body>
 </html>

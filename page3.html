@@ -5,30 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My website</title>
-
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-
-    <!-- Header container of page -->
-    <header>
-        <div class="right-align">
-            <h1 class="add-title-style">World of CSS</h1>
-        </div>
-    </header>
-
-    <!-- Main container -->
-    <main>
-        <!-- Left side bar -->
-        <aside class="sidebar">
-            <!-- Additional container on the left side bar -->
-            <div class="add-el">
-                <p class="add-title-style">Pages of the web-site</p>
+    <div class="container">
+        <!-- Header of page -->
+        <div class="header">
+            <div class="right-align">
+                <h2 class="add-title-style">World of CSS</h2>
             </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="right-align">
+                <h2 class="add-title-style">Discover<br> CSS colors</h2>
+            </div>
+        </div>
+
+        <!-- Left side bar -->
+        <div class="sidebar-left">
             <!-- Content of the side bar -->
             <div class="sidebar-content">
-
                 <p class="add-title-style">Menu</p>
                 <ol>
                     <li><a href="index.html"> Main page</a></li>
@@ -37,41 +36,10 @@
                     <li><a href="page4.html"> Hexadecimal Colors</a></li>
                 </ol>
             </div>
-        </aside>
-
-        <div class="main-div">
-            <h1 class="main-title-style">Exploring the World of CSS Colors</h1>
-
-            <div class="main-text-box">
-                <p class="main-text-style">
-                <span class="add-title-style">CSS Color Properties</span><br>
-                <span class="add-title-style">Color Names</span><br>
-                CSS provides a set of predefined color names that you can use to style elements. These names include common colors like
-                "red," "blue," and "green," making it easy to get started with color styling.
-                <br>
-                <span class="add-title-style">RGB Colors</span><br>
-                RGB stands for Red, Green, and Blue. This color model uses three values (ranging from 0 to 255) to define the amount of
-                each primary color in a color mixture. It offers precise control over colors.</p>
-            </div>
-
-            <div class="img-container">
-                <img src="imgs/rgb.jpg" alt="RGB" usemap="#image-map">
-            <!-- MAP -->
-            <map name="image-map">
-                <area shape="rect" coords="0,0,350,350" href="page4.html" alt="Area 1">
-            </map>
-            
-            </div>
-
-            <!-- Additional element of main div -->
-            <div class="add-footer">
-                <p class="add-title-style">The RGB color model is based on the Young-Helmholtz theory of trichromatic color vision, developed by Thomas Young and
-                Hermann von Helmholtz in the early to mid-nineteenth century</p>
-            </div>
         </div>
 
         <!-- Right sidebar -->
-        <aside class="sidebar">
+        <div class="sidebar-right">
             <div class="sidebar-content">
                 <h3 class="add-title-style">Some of the advantages of using CSS are:</h3>
                 <ul>
@@ -84,19 +52,63 @@
                     <li>Ease of presenting different styles to different viewers</li>
                     <li>Greater accessibility</li>
                 </ul>
-
             </div>
-        </aside>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="right-align">
-            <h1 class="add-title-style">Discover<br> CSS colors</h1>
         </div>
-    </footer>
+
+        <!-- Additional container on the left side bar -->
+        <div class="add-el">
+            <p class="add-title-style">Pages of the web-site</p>
+        </div>
+
+        <!-- Additional element of main div -->
+        <div class="add-footer">
+            <p class="add-text">
+                The RGB color model is based on the Young-Helmholtz theory of trichromatic color vision, developed by Thomas Young and
+                Hermann von Helmholtz in the early to mid-nineteenth century
+            </p>
+        </div>
+
+        <!-- Main container -->
+        <div class="main">
+            <h1 class="main-title-style">Exploring the World of CSS Colors</h1>
+            
+            <div class="main-text-box">
+                <p class="main-text-style">
+                    <span class="add-title-style">Color Names</span><br>
+                    CSS provides a set of predefined color names that you can use to style elements. These names include common
+                    colors like
+                    "red," "blue," and "green," making it easy to get started with color styling.
+                    <br>
+                    <span class="add-title-style">RGB Colors</span><br>
+                    RGB stands for Red, Green, and Blue. This color model uses three values (ranging from 0 to 255) to define the
+                    amount of
+                    each primary color in a color mixture. Each color in the RGB model is represented by three numerical values,
+                    typically ranging from 0 to 255, which correspond
+                    to the intensity of red, green, and blue. For example, (255, 0, 0) represents pure red.
+                    <br>
+                    <span class="add-title-style">RGBA Colors</span><br>
+                    RGBA is an extension of the RGB color model. In RGB, colors are defined by specifying values for the three
+                    primary
+                    colors: red, green, and blue. Each of these colors can have values ranging from 0 to 255, with 0 indicating no
+                    intensity
+                    and 255 indicating full intensity. For example, (255, 0, 0) represents pure red, while (0, 255, 0) represents
+                    pure
+                    green.
+                </p>
+            </div>
+            
+            <div class="img-container">
+                <img src="imgs/rgb.jpg" alt="RGB" usemap="#image-map">
+                <!-- MAP -->
+                <map name="image-map">
+                    <area shape="rect" coords="0,0,350,350" href="page4.html" alt="Area 1">
+                </map>
+            
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
-
 </html>

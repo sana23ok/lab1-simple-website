@@ -1,38 +1,44 @@
 body {
-    display: flex;
-    flex-wrap: wrap;
     font-family: 'Montserrat', sans-serif;
     background-color: white;
     margin: 0;
     padding: 0;
-    height: 100%;
-    /* max-height: 760px; */
-    
-}
-
-header {
-    background: #375d63;
-    padding: 20px;
-    text-align: center;
     width: 100%;
 }
 
-footer {
-    background: #375d63;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 0px;
-    /* flex-direction: row; */
-    height: 100%;
-    flex-direction: column-reverse;
+.container {
+    display: grid;
+    grid-template-columns: 0.6fr 1.8fr 0.6fr;
+    grid-template-rows: 0.4fr 0.25fr 2.4fr 0.25fr 0.4fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header"
+        "add-el main sidebar-right"
+        "sidebar-left main sidebar-right"
+        "sidebar-left add-footer sidebar-right"
+        "footer footer footer";
 }
 
-.sidebar {
-    background: #b8d6ee;
-    width: 250px;
-    padding-bottom: 40px;
-    box-sizing: border-box;
+.header {
+    grid-area: header;
+    background-color:#375d63;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #375d63;
+}
+
+.sidebar-left {
+    grid-area: sidebar-left;
+    background-color: #b8d6ee;
+}
+
+.sidebar-right {
+    grid-area: sidebar-right;
+    background-color: #b8d6ee;
 }
 
 .sidebar-content {
@@ -42,33 +48,55 @@ footer {
     box-sizing: border-box;
 }
 
-.add-footer {
-    padding: 16px;
-    border: 0px;
-    /* flex-direction: row; */
-    flex:1;
-    /* margin-bottom: 0px;
-    margin-top: auto; */
+.add-el {
+    padding: 8px 20px 0px 20px;
+    align-items: center;
+    grid-area: add-el;
     background-color: #add236;
-    bottom: 0;
 }
 
-.add-el {
-    padding: 16px;
-    border: 0px;
-    margin-bottom: 10px;
-    margin-top: 0 px;
+.add-footer {
+    padding: 8px 20px 0px 20px;
+    align-items: center;
+    grid-area: add-footer;
     background-color: #add236;
+}
+
+.main {
+    padding: 16px 8px 2px 8px;
+    grid-area: main;
+}
+
+.main-text-box {
+    padding: 20px;
 }
 
 .right-align {
     float: right;
-    margin-right: 52px;
+    margin: 34px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 68px;
     background-color: #b8d8e3;
-    padding: 8px;
+    align-items: center;
 }
 
-.main-title-style{
+img {
+    display: block;
+    width: 380px;
+    height: auto;
+    margin: 10px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title-style {
     color: #000;
     font-size: 22px;
     font-weight: 700;
@@ -76,16 +104,18 @@ footer {
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
+    flex: 1;
 }
 
 .add-title-style {
     color: #000;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 550;
     line-height: 24px;
-    margin-top: 0px;
+    margin-top: 6px;
     margin-bottom: 0px;
     text-align: center;
+    flex: 1;
 }
 
 .main-text-style {
@@ -93,45 +123,20 @@ footer {
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 6px;
+    margin-bottom: 0px;
     text-align: left;
 }
 
-.main-text-box{
-    padding: 10px;
-}
-
-main{
-    display: flex;
-    flex: 1;
-    /* flex-direction:row; */
-}
-
-.main-div{
-    /* padding: 20px; */
-    margin-top: 24px;
-    flex: 1;
-}
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-}
-
-.img-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-img {
-    width: 380px;
-    flex-direction: column-reverse;
-    height: auto;
-    margin: 10px;
-    /* flex: 1; */
+.add-text{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* padding: 6px 16px 4px 16px; */
+    text-align: center;
 }
 
 ol {
@@ -141,17 +146,13 @@ ol {
     margin: 0;
 }
 
-ol li{
+ol li, ul li {
     margin: 0;
-    padding: 0;
+    padding-left: 8px;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     color: #000;
-}
-
-ul li {
-    padding-bottom: 4px;
 }
 
 ol li a {
@@ -159,12 +160,13 @@ ol li a {
     color: navy;
 }
 
-ol li a:active, ol li a:hover {
+ol li a:active,
+ol li a:hover {
     text-decoration: underline;
     color: royalblue;
 }
 
-.li-title{
+.li-title {
     color: #000;
     font-style: italic;
     font-size: 18px;
@@ -174,3 +176,4 @@ ol li a:active, ol li a:hover {
     margin-bottom: 0px;
     text-align: left;
 }
+
